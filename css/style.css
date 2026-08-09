@@ -1,0 +1,134 @@
+/* 
+  ESTILOS GERAIS
+  Aplicados ao corpo da página e ao comportamento básico de navegação.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 72px;
+}
+
+/* 
+  AJUSTE DAS SEÇÕES
+  Define espaçamento vertical padrão entre as principais áreas da página.
+*/
+
+.section-padding {
+  padding: 72px 0;
+}
+
+/* 
+  LOGO
+  Define o tamanho da imagem usada no cabeçalho.
+  A propriedade width controla a largura da logo.
+  A altura automática mantém a proporção original da imagem.
+*/
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+/* 
+  HERO SECTION
+  Seção inicial da página.
+  Usa altura mínima para dar destaque à apresentação do projeto.
+*/
+
+.hero-section {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+/* 
+  CARDS
+  Ajustes visuais nos cards do Bootstrap.
+  Mantém cantos arredondados e aparência mais moderna.
+*/
+
+.card {
+  border-radius: 1rem;
+}
+
+/* 
+  BADGES
+  Ajuste simples para melhorar a leitura dos marcadores.
+*/
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* 
+  PROGRESS BAR
+  Ajusta a altura das barras usadas na seção de tecnologias.
+*/
+
+.progress {
+  height: 10px;
+}
+
+/* 
+  NAVBAR
+  Ajustes de navegação.
+  O z-index garante que o menu fique acima do conteúdo.
+*/
+
+.navbar {
+  z-index: 1000;
+}
+
+.navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+/* 
+  LINKS DO MENU
+  Pequeno destaque visual ao passar o mouse.
+*/
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #198754;
+}
+
+/* 
+  FOOTER
+  Ajustes finais do rodapé.
+*/
+
+.footer {
+  font-size: 0.95rem;
+}
+
+/* 
+  RESPONSIVIDADE
+  Ajustes para telas menores.
+*/
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 56px 0;
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+}
